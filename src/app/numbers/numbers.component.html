@@ -3,13 +3,21 @@
 <div class="row">
     <div *ngFor="let MyNumber of MyNumbers" class="col">
        <div class="card" h-100>
-            <h5 class="card-tile">{{MyNumber.name}}</h5>
-            <p class="card-text">
-                {{MyNumber.email}}
-            </p>
-            <div class="col">
-                {{MyNumber.age}}
-            </div>
+            <h3 class="card-tile">
+                Id : {{MyNumber.id}}  
+            </h3>
+            <h5 class="card-text">
+                Az ember neve : {{MyNumber.name}}
+            </h5>
+            
+            <h5 class="card-text">
+                Az ember emailja : {{MyNumber.email}}
+            </h5>
+            <h5 class="card-text">
+                Az ember kora : {{MyNumber.age}}
+            </h5>
+                
+            
     </div>
     <div class="card-footer">
         <small class="text-muted">
