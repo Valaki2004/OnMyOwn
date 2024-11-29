@@ -7,7 +7,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 const routes: Routes = [
   {path:"Home", component:HomeComponent},
   {path:"Navbar", component:NavbarComponent},
-  {path:"Numbers", component:NumbersComponent}
+  {path:"Numbers", component:NumbersComponent},
+  {path:"", redirectTo:"Home",pathMatch:'full'},
 ];
 
 @NgModule({

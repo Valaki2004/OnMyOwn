@@ -2,9 +2,24 @@
 
 <div class="row">
     <div *ngFor="let MyNumber of MyNumbers" class="col">
-        {{MyNumber.age}}
-        {{MyNumber.email}}
-        {{MyNumber.id}}
-        {{MyNumber.name}}
+       <div class="card" h-100>
+            <h5 class="card-tile">{{MyNumber.name}}</h5>
+            <p class="card-text">
+                {{MyNumber.email}}
+            </p>
+            <div class="col">
+                {{MyNumber.age}}
+            </div>
+    </div>
+    <div class="card-footer">
+        <small class="text-muted">
+            <div class="row">
+                <div class="col mt-2">
+                    {{MyNumbers.id}}
+                    {{MyNumbers.name}}
+                </div>
+            </div>
+        </small>
+    </div>
     </div>
 </div>
